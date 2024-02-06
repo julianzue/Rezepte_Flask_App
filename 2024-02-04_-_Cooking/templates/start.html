@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezepte</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <section>
+        <article class="header">
+            <div class="title">
+                <h1>Rezepte</h1>
+                <p class="center">Anzahl: {{ anzahl }}</p>
+            </div>
+        </article>
+
+        <article class="margin-top">
+            <div class="title">
+                <h2>Neuer Eintrag</h2>
+            </div>
+
+            <div class="main">
+                <form method="post">
+                    <p>Name</p>
+                    <input type="text" name="name" class="text">
+                    <p><br>Zutaten</p>
+                    <input type="text" name="zutaten" class="text">
+                    <p><br>Zubereitung</p>
+                    <textarea name="zubereitung" class="textarea" rows="10"></textarea>
+                    <input type="submit" value="Speichern" name="speichern" class="speichern">
+                </form>
+            </div>
+        </article>
+
+        {% for rezept in rezepte %}
+        <article class="margin-top">
+            <div class="title">
+                <h2>{{ rezept.name }}</h2>
+                <p>{{ rezept.date }}</p>
+            </div>
+            <div class="main">
+                <p>
+                    <strong>Zutaten:</strong><br>
+                    {{ rezept.zutaten }}<br>
+                    <br>
+                    <strong>Zubereitung:</strong><br>
+                    {% autoescape false%}
+                    {{ rezept.zubereitung }}
+                    {% endautoescape %}
+                </p>
+            </div>
+        </article>
+        {% endfor %}
+
+        <article class="margin-top">
+            <div class="main">
+                <p class="center">Erstellt von Julian &bull; 2024</p>
+            </div>
+        </article>
+    </section>
+
+    
+</body>
+</html>

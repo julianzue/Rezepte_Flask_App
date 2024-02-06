@@ -1,0 +1,6 @@
+name: Maultaschen
+date: 02.02.2024
+zutaten: Maultaschen, Eier
+- Maultaschen anbraten
+- Eier dazu
+- Mit Salz und Pfeffer abschmecken
