@@ -1,8 +1,0 @@
-name: Brassói
-date: 02.02.2024
-zutaten: Schweinegulasch (1 Teil), Kartoffeln (2 Teile), Knoblauch (viel), Salz, Pfeffer
-1. Fleisch und Kartoffeln in kleine Würfel schneiden
-2. Knoblauch hacken
-3. Fleisch anbraten und anschließend mit Salz, Pfeffer und Knoblauch würzen
-4. Kartoffeln doppelt frittieren
-5. Alles in  einer Schüssel miteinander verrühren
